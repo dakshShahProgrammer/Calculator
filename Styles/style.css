@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #333;
+    color: #fff;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 80px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 15px;
+    font-size: 1.2em;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.display {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+#display {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-size: 2em;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
+
+.btn:active {
+    background: #ddd;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
